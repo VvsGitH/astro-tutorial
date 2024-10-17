@@ -3,7 +3,7 @@ const { platform, username } = Astro.props;
 ---
 
 <style>
-  a {
+  .social-link {
     padding: 0.5rem 1rem;
     color: white;
     background-color: #4c1d95;
@@ -11,4 +11,4 @@ const { platform, username } = Astro.props;
   }
 </style>
 
-<a href={`https://www.${platform}.com/${username}`}>{platform}</a>
+<a class="social-link" href={`https://www.${platform}.com/${username}`}>{platform}</a>
