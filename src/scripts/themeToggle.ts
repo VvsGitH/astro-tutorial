@@ -24,4 +24,6 @@ const handleToggleClick = () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
 };
 
-document.getElementById("themeToggle")?.addEventListener("click", handleToggleClick);
+document
+  .getElementById("themeToggle")
+  ?.addEventListener("click", handleToggleClick);
