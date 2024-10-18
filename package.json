@@ -2,12 +2,22 @@
   "name": "astro-tutorial",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Vito Paparella Santorsola",
+    "email": "vs.paparella@gmail.com"
+  },
+  "engines": {
+    "node": ">= 20"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint src --fix",
+    "prettify": "prettier src --write"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
@@ -15,5 +25,16 @@
     "astro": "^4.16.6",
     "preact": "^10.24.3",
     "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/parser": "^8.10.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-astro": "^1.3.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript-eslint": "^8.10.0"
   }
 }
