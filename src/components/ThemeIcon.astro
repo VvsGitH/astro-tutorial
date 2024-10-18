@@ -24,3 +24,10 @@
 <script>
   import '../scripts/themeToggle.ts'
 </script>
+
+<!-- This script will run as soon as possibile and prevents a flash of white when the theme is dark -->
+<script is:inline>
+  localStorage.getItem("theme") === "dark"
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.remove("dark");
+</script>
